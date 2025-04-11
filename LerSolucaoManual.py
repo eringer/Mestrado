@@ -182,7 +182,7 @@ def calcular_custo_alocacao_manual(matriz_alocacoes, problem_params):
 # ========== EXEMPLO DE USO ==========
 if __name__ == "__main__":
 
-    matrizes = 'Matrizes.xlsx'
+    matrizes = './Planilhas/Matrizes.xlsx'
 
     # Exemplo de parâmetros (substitua pelos seus dados reais)
     params = {
@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
     
 
-    sheet = pd.read_excel('Professores-Aulas-Turmas-2024-1.xlsx', sheet_name='Solução Manual', usecols="A:D", nrows=956, header=None)
+    sheet = pd.read_excel('./Planilhas/Professores-Aulas-Turmas-2024-1.xlsx', sheet_name='Solução Manual', usecols="A:D", nrows=956, header=None)
 
     matriz_exemplo = sheet.values
     
