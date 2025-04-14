@@ -757,7 +757,7 @@ if __name__ == "__main__":
     total_turmas = 23
     total_professores = 82
 
-    matrizes = 'Matrizes.xlsx'
+    matrizes = './Planilhas/Matrizes.xlsx'
     
     # ProfTurma: quantas aulas um professor deve dar em uma turma (valores típicos 0, 2 ou 3)
     dfProfTurma = pd.read_excel(matrizes, sheet_name="ProfTurma", usecols="B:AR", skiprows=2, nrows=82, header=None)
