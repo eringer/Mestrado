@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carregar a planilha com os dados
-df = pd.read_excel("resultados_calibracao3.xlsx", sheet_name="Sheet1")
+df = pd.read_excel("Planilhas/resultados_calibracao2.xlsx", sheet_name="Sheet1")
 
 # Identificar as configurações de interesse
 mais_rapido_maior_custo = df.loc[df['avg_cost'].idxmax()]

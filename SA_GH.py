@@ -754,7 +754,7 @@ if __name__ == "__main__":
     # Parâmetros do problema
     dias_por_semana = 5
     aulas_por_dia = 16
-    total_turmas = 23
+    total_turmas = 43
     total_professores = 82
 
     matrizes = './Planilhas/Matrizes.xlsx'
@@ -796,7 +796,7 @@ if __name__ == "__main__":
                              ProfTurma, G2, G22, G3, CP_values, PD_values)
     
 
-    # Definir a grade de parâmetros para calibração
+    # # Definir a grade de parâmetros para calibração
     # param_grid = {
     #     'initial_temp': [1000, 5000, 10000, 20000, 40000],
     #     'cooling_rate': [0.85, 0.90, 0.95, 0.99],
@@ -813,7 +813,7 @@ if __name__ == "__main__":
     # print("\nMelhores configurações:")
     # print(df_results.sort_values(by='avg_cost').head())
 
-    # df_results.to_excel('resultados_calibracao3.xlsx', index=False)
+    # df_results.to_excel('Planilhas/resultados_calibracao4.xlsx', index=False)
     
     
     # Executar Simulated Annealing
@@ -837,20 +837,20 @@ if __name__ == "__main__":
     violacoes = best_solution.contar_violacoes()
 
     # Exibir resultados detalhados
-    # print("\nVIOLAÇÕES NA MELHOR SOLUÇÃO:")
-    # print("----------------------------")
-    # print("Pedagógicas:")
-    # print(f"CP1 (excesso de aulas/dia): {violacoes['CP1']}")
-    # print(f"CP2 (aulas em dias consecutivos): {violacoes['CP2']}")
-    # print(f"CP3 (exatas em horários ruins): {violacoes['CP3']}")
-    # print(f"CP4 (turnos distintos no mesmo dia): {violacoes['CP4']}")
+    print("\nVIOLAÇÕES NA MELHOR SOLUÇÃO:")
+    print("----------------------------")
+    print("Pedagógicas:")
+    print(f"CP1 (excesso de aulas/dia): {violacoes['CP1']}")
+    print(f"CP2 (aulas em dias consecutivos): {violacoes['CP2']}")
+    print(f"CP3 (exatas em horários ruins): {violacoes['CP3']}")
+    print(f"CP4 (turnos distintos no mesmo dia): {violacoes['CP4']}")
 
-    # print("\nDocentes:")
-    # print(f"PD1 (noite→manhã): {violacoes['PD1']}")
-    # print(f"PD2 (professores específicos em horários ruins): {violacoes['PD2']}")
-    # print(f"PD3 (professor 1 nos primeiros horários): {violacoes['PD3']}")
-    # print(f"PD4 (aulas em dias indesejados): {violacoes['PD4']}")
-    # print(f"PD5 (substitutos em dias de planejamento): {violacoes['PD5']}")
+    print("\nDocentes:")
+    print(f"PD1 (noite→manhã): {violacoes['PD1']}")
+    print(f"PD2 (professores específicos em horários ruins): {violacoes['PD2']}")
+    print(f"PD3 (professor 1 nos primeiros horários): {violacoes['PD3']}")
+    print(f"PD4 (aulas em dias indesejados): {violacoes['PD4']}")
+    print(f"PD5 (substitutos em dias de planejamento): {violacoes['PD5']}")
     
     # Imprimir detalhes da alocação (opcional)
     # for t in range(1, total_turmas + 1):

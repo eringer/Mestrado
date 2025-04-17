@@ -4,7 +4,7 @@ import pandas as pd
 # Dados atualizados
 dados = {
     'Método': ['Solução Manual', 'SA-GH', 'PLI-GH'],
-    'Custo Total': [1340, 1210, 111]
+    'Custo Total': [1340, 365.33, 111]
 }
 
 df = pd.DataFrame(dados)
@@ -25,4 +25,4 @@ for bar in bars:
 plt.tight_layout()
 
 
-plt.savefig("grafico_comparacao_manual.png", dpi=300)
+plt.savefig("Figuras/grafico_comparacao_manual.png", dpi=300)
