@@ -49,12 +49,12 @@ $$\sum_{p \in P} x^{p,t}_{d,h} = 0; \quad \forall t \in \{1...4\}, \forall h \in
 **Tabela 2:** Estrutura para o tratamento de aulas geminadas
 | **Categoria**              | **Notações**          | **Descrição**                                                                 |
 |----------------------------|-----------------------|-------------------------------------------------------------------------------|
-| **Matrizes**               | `$G2[p,t]$`           | Matriz que indica se o professor `$p$` possui aula geminada de dois tempos na turma `$t$`. |
-|                            | `$G22[p,t]$`          | Matriz que indica se o professor `$p$` possui duas aulas geminadas de dois tempos na turma `$t$`. |
-|                            | `$G3[p,t]$`           | Matriz que indica se o professor `$p$` possui aula geminada de três tempos na turma `$t$`. |
-| **Variáveis de Decisão**    | `$y2^{p,t}_{d}$`      | Variável binária que indica se o professor `$p$` tem aula geminada de dois tempos na turma `$t$` no dia `$d$`. |
-|                            | `$y2a^{p,t}_{d}$`<br>`$y2b^{p,t}_{d}$` | Variáveis binárias que indicam se o professor `$p$` possui duas aulas geminadas de dois tempos (uma para cada aula) na turma `$t$` no dia `$d$`. |
-|                            | `$y3^{p,t}_{d}$`      | Variável binária que indica se o professor `$p$` possui uma aula geminada de três tempos na turma `$t$` no dia `$d$`. |
+| **Matrizes**               | $G2[p,t]$           | Matriz que indica se o professor $p$ possui aula geminada de dois tempos na turma $t$. |
+|                            | $G22[p,t]$          | Matriz que indica se o professor $p$ possui duas aulas geminadas de dois tempos na turma $t$. |
+|                            | $G3[p,t]$           | Matriz que indica se o professor $p$ possui aula geminada de três tempos na turma $t$. |
+| **Variáveis de Decisão**    | $y2^{p,t}_{d}$      | Variável binária que indica se o professor $p$ tem aula geminada de dois tempos na turma $t$ no dia $d$. |
+|                            | $y2a^{p,t}_{d}$ <br> $y2b^{p,t}_{d}$ | Variáveis binárias que indicam se o professor $p$ possui duas aulas geminadas de dois tempos (uma para cada aula) na turma $t$ no dia $d$. |
+|                            | $y3^{p,t}_{d}$      | Variável binária que indica se o professor $p$ possui uma aula geminada de três tempos na turma $t$ no dia $d$. |
 
 ### Restrições:
 
