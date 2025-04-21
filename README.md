@@ -106,10 +106,12 @@ $$\sum_{d \in D} y3^{p,t}_{d} = 1; \quad \forall p \in P, \forall t \in T : G3[p
 $$
 \textbf{Se } (y3^{p,t}_{d} = 1) \textbf{ então }
 \begin{aligned}
-&\big((x^{p,t}_{d,1} = 1 \land x^{p,t}_{d,2} = 1 \land x^{p,t}_{d,3} = 1) \lor \\
-&(x^{p,t}_{d,2} = 1 \land x^{p,t}_{d,3} = 1 \land x^{p,t}_{d,4} = 1) \lor \\
-&\quad \vdots \\
-&(x^{p,t}_{d,14} = 1 \land x^{p,t}_{d,15} = 1 \land x^{p,t}_{d,16} = 1)\big);
+&\Big(
+  (x^{p,t}_{d,1} = x^{p,t}_{d,2} = x^{p,t}_{d,3} = 1) \\
+&\quad \lor (x^{p,t}_{d,2} = x^{p,t}_{d,3} = x^{p,t}_{d,4} = 1) \\
+&\quad \lor \quad \vdots \\
+&\quad \lor (x^{p,t}_{d,14} = x^{p,t}_{d,15} = x^{p,t}_{d,16} = 1)
+\Big);
 \end{aligned}
 \\ \forall d \in D, \forall p \in P, \forall t \in T: G3[p,t] = 1.
 $$
@@ -119,6 +121,28 @@ $$
 $$y2^{p,t}_{d} + y3^{p,t}_{d} \leq 1; \quad \forall p \in P, \forall t \in T, \forall d \in D: G2[p,t]=1 \land G3[p,t]=1.$$
 
 ### Restrições para o Custo Pedagígico (CP)
+
+#### CP1: Mais de uma aula de um professor para a mesma turma no mesmo dia}
+
+
+$$\textbf{Se } \left( \sum_{h \in H} x^{p,t}_{d,h} \geq 2 \right) \textbf{ então } CustoP1^{p,t}_{d} = 3; \quad \\ \forall d \in D, \forall t \in T, \forall p \in P : G2[p,t] = 0 \land G22[p,t] = 0 \land G3[p,t] = 0.$$
+
+$$\textbf{Se } \left( \sum_{h \in H} x^{p,t}_{d,h} \geq 3 \right) \textbf{ então } CustoP1^{p,t}_{d} = 3; \quad \forall d \in D, \forall t \in T, \forall p \in P : \\
+G2[p,t] = 1 \lor G22[p,t] = 1.$$
+
+$$\textbf{Se } \left( \sum_{h \in H} x^{p,t}_{d,h} \geq 4 \right) \textbf{ então } CustoP1^{p,t}_{d} = 3; \quad \forall d \in D, \forall t \in T, \forall p \in P : \\
+G3[p,t] = 1.$$
+
+#### CP2: Aulas de um mesmo professor para a mesma turma em dias seguidos
+
+$$\textbf{Se } 
+\left( \sum_{h \in H} x^{p,t}_{d-1,h} \geq 1 \right) 
+\textbf{ e } 
+\left( \sum_{h \in H} x^{p,t}_{d,h} \geq 1 \right) 
+\textbf{ então } 
+CustoP2^{p,t}_{d} = 1; \\
+\forall d \in \{2,\dots,5\}, \forall t \in T, \forall p \in P.$$
+
 
 
 
