@@ -104,14 +104,18 @@ $$\sum_{d \in D} y3^{p,t}_{d} = 1; \quad \forall p \in P, \forall t \in T : G3[p
 ---
 
 $$
-\textbf{Se } (y3^{p,t}_{d} = 1) \textbf{ então }
-\begin{aligned}
-&\big((x^{p,t}_{d,1} = 1 \land x^{p,t}_{d,2} = 1 \land x^{p,t}_{d,3} = 1) \lor \\
-&(x^{p,t}_{d,2} = 1 \land x^{p,t}_{d,3} = 1 \land x^{p,t}_{d,4} = 1) \lor \\
-&\quad \vdots \\
-&(x^{p,t}_{d,14} = 1 \land x^{p,t}_{d,15} = 1 \land x^{p,t}_{d,16} = 1)\big);
-\end{aligned}
-\\ \forall d \in D, \forall p \in P, \forall t \in T: G3[p,t] = 1.
+\text{Se } (y3^{p,t}_{d} = 1) \text{ então }
+\begin{cases}
+\big(
+  & (x^{p,t}_{d,1} = x^{p,t}_{d,2} = x^{p,t}_{d,3} = 1) \\
+\lor & (x^{p,t}_{d,2} = x^{p,t}_{d,3} = x^{p,t}_{d,4} = 1) \\
+\lor & \quad\vdots \\
+\lor & (x^{p,t}_{d,14} = x^{p,t}_{d,15} = x^{p,t}_{d,16} = 1)
+\big)
+\end{cases}
+$$
+$$
+\forall d \in D, \forall p \in P, \forall t \in T: G3[p,t] = 1.
 $$
 
 ---
