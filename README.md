@@ -154,11 +154,11 @@ G3[p,t] = 1.$$
 
 #### CP2: Aulas de um mesmo professor para a mesma turma em dias seguidos
 
-$$\textbf{Se } 
+$$Se  
 \left( \sum_{h \in H} x^{p,t}_{d-1,h} \geq 1 \right) 
-\textbf{ e } 
+ e  
 \left( \sum_{h \in H} x^{p,t}_{d,h} \geq 1 \right) 
-\textbf{ então } 
+ então \space 
 CustoP2^{p,t}_{d} = 1; \\
 \forall d \in \{2,\dots,5\}, \forall t \in T, \forall p \in P.$$
 
