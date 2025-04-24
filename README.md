@@ -1,4 +1,23 @@
 ## 📂 Downloads
+<style TYPE="text/css">
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
 
 Aqui você encontra os arquivos de grade de horário utilizados neste projeto:
 
@@ -53,7 +72,7 @@ $$\sum_{p \in P} x^{p,t}_{d,h} = 0; \quad \forall t \in \{1...4\}, \forall h \in
 |                            | $G22[p,t]$          | Matriz que indica se o professor $p$ possui duas aulas geminadas de dois tempos na turma $t$. |
 |                            | $G3[p,t]$           | Matriz que indica se o professor $p$ possui aula geminada de três tempos na turma $t$. |
 | **Variáveis de Decisão**    | $y2^{p,t}_{d}$      | Variável binária que indica se o professor $p$ tem aula geminada de dois tempos na turma $t$ no dia $d$. |
-|                            | $y2a^{p,t}_{d} \\ y2b^{p,t}_{d}$ | Variáveis binárias que indicam se o professor $p$ possui duas aulas geminadas de dois tempos (uma para cada aula) na turma $t$ no dia $d$. |
+|                            | $y2a^{p,t}_{d}$  $y2b^{p,t}_{d}$ | Variáveis binárias que indicam se o professor $p$ possui duas aulas geminadas de dois tempos (uma para cada aula) na turma $t$ no dia $d$. |
 |                            | $y3^{p,t}_{d}$      | Variável binária que indica se o professor $p$ possui uma aula geminada de três tempos na turma $t$ no dia $d$. |
 
 ### Restrições:
